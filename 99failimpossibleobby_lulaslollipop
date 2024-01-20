@@ -1,4 +1,19 @@
--- Z to toggle 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(50,205,50)
+
+Library:Notification({
+    Text = "NIGGAMODE! jk godmode",
+    Duration = 5
+})
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(50,205,50)
+
+Library:Notification({
+    Text = "press Z to toggle",
+    Duration = 6
+})
+
+-- Z to Toggle
 local player = game:GetService("Players").LocalPlayer
 local UIS = game:GetService("UserInputService")
 local lollypop = false
@@ -6,13 +21,6 @@ local lollypop = false
 UIS.InputBegan:Connect(function(input, GPE)
 if GPE then return end
 if input.KeyCode == Enum.KeyCode.Z then
-      local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-      Library.DefaultColor = Color3.fromRGB(50,205,50)
-
-      Library:Notification({
-        Text = "niggamode off/on",
-        Duration = 2
-      })
 lollypop = not lollypop
 end
 end)
